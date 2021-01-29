@@ -29,10 +29,10 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
         const { hasError, error } = this.state;
         if (hasError) {
             return (
-                <div>
+                <div className="lg:container lg:mx-auto m-4 p-2 mt-2 rounded-lg bg-red-600 text-white">
                     <div>
                         <p>
-                            Beim Laden der Seite ist ein Fehler aufgetreten{' '}
+                            Sorry, da ist ein Fehler aufgetreten{' '}
                             <span
                                 style={{ cursor: 'pointer', color: '#0077FF' }}
                                 onClick={() => {
